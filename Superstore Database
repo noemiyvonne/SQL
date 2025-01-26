@@ -1,0 +1,29 @@
+--MY SUPERSTORE PROJECT EXAMPLE
+
+SELECT SUM(price)
+FROM superstore;
+
+SELECT AVG(average_rating)
+FROM superstore;
+
+SELECT MAX(stock_quantity)
+FROM superstore;
+
+SELECT MIN(average_rating)
+FROM superstore;
+
+SELECT COUNT(item_id)
+FROM superstore
+WHERE average_rating='4.6';
+
+SELECT SUM(price)
+FROM superstore
+WHERE category='Kitchen Supplies';
+
+SELECT SUM(price)
+FROM superstore
+WHERE category='Electronics';
+
+SELECT COUNT(item_id)
+FROM superstore
+WHERE stock_quantity <= 50
